@@ -1,0 +1,65 @@
+int value[] = {60, 100, 120};
+int weight[] = {10, 20, 30};
+int n;
+
+int func (int wt, int index)
+{
+  if (wt <= 0)
+  {
+    return 0;
+  }
+
+  int j, temp, max = 0;
+
+  for (j = index; j < n; j++)
+  {
+    if (wt < weight[j])
+    {
+      continue;
+    }
+
+    temp = value[j];
+    printf ("%d\n", temp);
+    temp = temp + func (wt-weight[j], j+1);
+
+    if (max < temp)
+      max = temp;
+
+  }
+
+  return max;
+}
+
+int dp[51][5];
+int func (int wt, int index)
+{
+  if (wt <= 0)
+  {
+    return 0;
+  }
+  else if (dp[wt][index] != -1)
+  {
+    return dp[wt][index];
+  }
+
+  int j, temp, max = 0;
+
+  for (j = index; j < n; j++)
+  {
+    if (wt < weight[j])
+    {
+      continue;
+    }
+
+    temp = value[j];
+    printf ("(%d, %d)\n", wt-weight[j], j+1);
+    temp = temp + func (wt-weight[j], j+1);
+
+    if (max < temp)
+      max = temp;
+
+  }
+
+  dp[wt][index] = max;
+  return max;
+}

@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+int func(int arr[], int n, int k);
+
+int main() {
+    
+	int T, N, K, arr[1000000], i;
+	
+	scanf("%d", &T);
+	
+	while(T-- > 0)
+	{
+	    scanf("%d", &N);
+	    
+	    scanf("%d", &K);
+	    
+	    for(i=0; i<N; i++)
+	    {
+	        scanf("%d", &arr[i]);
+	    }
+	    
+	    printf("%d\n", func(arr, N, K));
+	}
+	
+	return 0;
+}
+
+void heapify (int arr[], int i, int n)
+{
+    int lchild, rchild, biggest, temp;
+	biggest = i;
+
+    lchild = 2*i+1;
+    rchild = 2*i+2;
+        
+    if ((lchild < n) && (arr[lchild] > arr[biggest]))
+    {
+        biggest = lchild;
+    }
+    
+    if ((rchild < n) && (arr[rchild] > arr[biggest]))
+    {
+        biggest = rchild;
+    }
+    
+    if (biggest != i)
+    {
+        temp = arr[i];
+        arr[i] = arr[biggest];
+        arr[biggest] = temp;
+
+        heapify (arr, biggest, n);
+    }
+	
+}
+
+int func(int arr[], int n, int k)
+{
+    int i;
+    
+    for (i=(k/2 -1); i>=0; i--)
+    {
+        heapify(arr, i, k);
+    }
+
+    for (i=k; i<n; i++)
+    {
+        if (arr[i] < arr[0])
+        {
+            arr[0] = arr[i];
+            heapify(arr, 0, k);
+        }
+    }
+    
+    return arr[0];
+}

@@ -1,0 +1,58 @@
+Balasaheb Salunke9:37 AM
+Write a simple program in C++ to rotate the array of integrer in left by number of position.
+Balasaheb Salunke9:37 AM
+e.g.
+Balasaheb Salunke9:37 AM
+3 4 6 7 8 9 1 6 7
+Balasaheb Salunke9:37 AM
+left shift it by 4
+Balasaheb Salunke9:38 AM
+8 9 1 6 7 3 4 6 7
+
+
+
+
+
+void leftshift (int *arr, int n, int noShift)
+{
+	for (i=0; i<noShift; i++)
+	{
+		temp = arr[0];
+		
+		for (j=1; j<n; j++)
+		{
+			arr[j-1] = arr[j];
+		}
+		
+		a[j-1] = temp;
+	}
+}
+
+
+
+
+Write a program to find out the number of characters needs to be removed from string to make anagram. e.g. A = “aasdkls” B = “uadlb”
+
+arr1 [127] arr2[127]
+
+int func (char *str1, char *str2)
+{
+	int count = 0;
+	len1 = strlen(str1);
+	len2 = strlen(str2);
+	
+	for (i=0; str1[i] != 0; i++)
+	{
+		for (j=0; str2[j] != 0; j++)
+		{
+			if (str1[i] == str2[j])
+			{
+				count++;
+				str2[j] = '#';
+				break;
+			}
+		}
+	}
+	
+	return len1 + len2 - (2*count);
+}

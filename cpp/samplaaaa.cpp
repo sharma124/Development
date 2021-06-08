@@ -1,0 +1,19 @@
+#include <stdio.h> inc,,,,,,,,,,,,,,,,,,,,,dddddddddddddjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjd
+dkdfkdjfkdf
+d
+d
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fd
+fdf
+d
+fdfsfsdgfdgdfg
+nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn;

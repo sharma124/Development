@@ -1,0 +1,63 @@
+10.133.48.63/64  root/SIPera_123
+
+sipp -sf UAS_ANAT_16620.xml 192.168.5.38 192.168.45.12:5060 -p 5062 -t t1 -inf anat.csv
+
+sipp -sf UAC_ANAT_16620.xml -i 10.133.48.63 10.133.48.59:5060 -m 1 -t t1 -inf anat.csv
+ 
+SBC-10.133.48.127 SA
+
+10.133.85.212 vdamgude/vdamgude123   urn_map/savon
+
+
+
+
+Media Tunneling test /home/sipp/Test_AdityaS/media_tunnelTosif
+10.133.73.5 SA
+
+
+
+unsigned long m = -1, x;
+int i, n = (a.size()), index;
+
+for (i = 1; i<n; i++)
+{
+
+    x = (((long)(pow(a[i], a[i+1]))) % 1000000007);
+    if (m > x)
+    {
+        m = x;
+        index = i;
+    }
+}
+
+
+
+vector<int> order(int employees_nodes, vector<int> employees_from, vector<int> employees_to, int host) {
+
+vector<int> arr;
+
+    int i = 0, j;
+        while (i < employees_from.size())
+        {
+            if ((employees_from[i]==host) && (i < employees_to.size()))
+            {
+                arr.push_back(employees_to[i]);
+            }
+            i++;
+        }
+
+    for (i=0; i<arr.size(); i++)
+    {
+        j = 0;
+        while (j < employees_from.size())
+        {
+            if ((employees_from[j]==arr[i]) && (j< employees_to.size()))
+            {
+                arr.push_back(employees_to[j]);
+            }
+            j++;
+        }
+    }
+
+    return arr;
+}

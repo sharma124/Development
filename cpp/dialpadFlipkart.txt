@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <string.h>
+
+void print (int *D, char *d, int N, int i);
+
+int main() {
+
+	int T, N, i, D[10];
+	char d[11];
+
+	scanf ("%d", &T);
+
+	for (; T>0; T--)
+	{
+	    scanf ("%d", &N);
+	    if (N <=0)
+	    {
+	        continue;
+	    }
+
+	    for (i=0; i<N; i++)
+	    {
+	        scanf("%d", &D[i]);
+	    }
+	   
+	   memset(d, 0, sizeof(d));
+	   print (D, d, N, 0);
+	   printf("\n");
+	}
+	return 0;
+}
+
+char digitToLetter (int Digit, int pos)
+{
+    char d2[]="abc"; char d3[]="def"; char d4[]="ghi"; char d5[]="jkl"; char d6[]="mno";
+    char d7[]="pqrs"; char d8[]="tuv"; char d9[]="wxyz";
+    switch (Digit)
+    {
+        case 2:
+         return d2[pos];
+        case 3:
+         return d3[pos];
+        case 4:
+         return d4[pos];
+        case 5:
+         return d5[pos];
+        case 6:
+         return d6[pos];
+        case 7:
+         return d7[pos];
+        case 8:
+         return d8[pos];
+        case 9:
+         return d9[pos];
+        default:
+         return 0;
+    }
+}
+
+void print (int *D, char *d, int N, int i)
+{
+    if (N == i)
+    {
+        printf ("%s ", d);
+        return;
+    }
+    
+    d[i] = digitToLetter(D[i], 0);
+    print (D, d, N, i+1);
+        
+    d[i] = digitToLetter(D[i], 1);
+    print (D, d, N, i+1);
+        
+    d[i] = digitToLetter(D[i], 2);
+    print (D, d, N, i+1);
+    
+	if (D[i] == 9 || D[i] == 7)
+    {
+        d[i] = digitToLetter(D[i], 3);
+        print (D, d, N, i+1);
+    }
+}

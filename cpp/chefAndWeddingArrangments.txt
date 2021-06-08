@@ -1,0 +1,129 @@
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+int func(int f[], int n, int k);
+
+int main() {
+
+	int T, family[1000];
+	int n, k, i;
+	
+	cin>>T;
+	
+	while (T-- > 0)
+	{
+	    cin>>n>>k;
+	    for (i=0; i<n; i++)
+	    {
+	        cin>>family[i];
+	    }
+	    
+	    cout <<func (family, n, k);
+	    cout<<"\n";
+	}
+	
+	return 0;
+}
+
+/Greedy solution
+int func(int f[], int n, int k)
+{
+
+    unordered_map<int, int> freq;
+    unordered_map<int, int> :: iterator it;
+    int i, cnt = k;
+    int a, b;
+    
+    for (i=0; i<n; i++)
+    {
+        it = freq.find(f[i]);
+        
+        if (it != freq.end())
+        {
+            if (it->second == 1)
+            {
+                a = cnt + 2;
+            }
+            else
+            {
+                a = cnt + 1;
+            }
+            
+            b = cnt+k;
+            
+            if (b>a)
+            {
+                cnt = a;
+                it -> second ++;
+            }
+            else
+            {
+                cnt = b;
+                freq.clear();
+                freq[f[i]] = 1;
+            }
+        }
+        else
+        {
+          freq[f[i]] = 1;
+        }
+    }
+    
+    return cnt;
+}
+
+/DP solution
+int func(int f[], int n, int k)
+{
+    int dp[1000];
+    unordered_map<int, int> table;
+    unordered_map<int, int> :: iterator it;
+    int i, j, min, cost, currcost;
+	
+    dp[0] = k;
+	
+	for (i=1; i<n; i++)
+	{
+	   j = i;
+	   table.clear();
+	   table[f[j]] = 1;
+	   cost = k;
+	   min = cost + dp[j-1];
+	   
+	   for (j = j-1; j>=0; j--)
+	   {
+	      it = table.find(f[j]);
+		  
+		  if (it != table.end())
+		  {
+		     if (it->second == 1)
+			     cost = cost + 2;
+			 else
+			     cost  = cost + 1;
+				 
+			it -> second ++;
+		  }
+		  else
+		  {
+		    table[f[j]] = 1;
+		  }
+		  
+		  currcost = cost;
+		  
+		  if (j != 0)
+		  {
+		    currcost = cost + dp[j-1];
+		  }
+		  
+		  if (min > currcost)
+		  {
+		     min = currcost;
+		  }
+	    }
+		
+		dp[i] = min;
+    }
+	
+	return dp[n-1];
+}

@@ -1,0 +1,448 @@
+[1-1-1970 1:5:5] Initialize DriveWorks SDK v1.1.843-experimental
+[1-1-1970 1:5:5] Experimental Release build with GNU 5.4.0 from heads/master-0-gf8d143c against Vibrante PDK v5.0.7.2
+[1-1-1970 1:5:5] Platform: Detected DDPX - Tegra A
+[1-1-1970 1:5:5] TimeSource: monotonic epoch time offset is 0
+[1-1-1970 1:5:5] Platform: number of GPU devices detected 1
+[1-1-1970 1:5:5] Platform: currently selected GPU device integrated ID 0
+[1-1-1970 1:5:6] SDK: Resources mounted from .././data/resources
+[1-1-1970 1:5:6] SDK: Create NvMediaDevice
+[1-1-1970 1:5:6] SDK: Create NvMediaIPPManager
+[1-1-1970 1:5:6] SDK: use EGL display as provided
+[1-1-1970 1:5:6] SensorFactory::createSensor() -> camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:6] CameraVirtual: The recorded RAW video appears to be a version 2, which is no longer supported
+[1-1-1970 1:5:6] CameraRAW: no seek table found at .././data/samples/raw/rccb.raw.seek, seeking is not available.
+Camera image: 1920x1208
+Camera image with 1920x1208 at 30 FPS
+[1-1-1970 1:5:10] DriveNet: Running in FP32 mode.
+[1-1-1970 1:5:11] FileHeader: file header created with development build (patch = -1), assumingcompatibility
+[1-1-1970 1:5:11] FileHeader: file header created with development build (patch = -1), assumingcompatibility
+[1-1-1970 1:5:11] [1-1-1970 1:5:11] Added linear block of size 22118400
+[1-1-1970 1:5:11] Added linear block of size 7372800
+[1-1-1970 1:5:11] Added linear block of size 3225600
+[1-1-1970 1:5:23] DataConditioner: Scale transformation has been configured with 0.003922.
+[1-1-1970 1:5:23] DataConditioner: Split transformation has been enabled.
+[1-1-1970 1:5:23] DataConditioner: Value subtract transformation has been configured with {0.00000, 0.00000, 0.00000}.
+Camera reached end of stream.
+[1-1-1970 1:5:24] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:24] Events: 0
+[1-1-1970 1:5:24] Errors: 0
+[1-1-1970 1:5:24] Drops: 0
+[1-1-1970 1:5:24] minDelta: 32389
+[1-1-1970 1:5:24] maxDelta: 67632
+[1-1-1970 1:5:24] meanDelta: 41253.61718750
+[1-1-1970 1:5:24] Standard deviation: 14336.02246094
+[1-1-1970 1:5:24] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:24] Events: 0
+[1-1-1970 1:5:24] Errors: 0
+[1-1-1970 1:5:24] Drops: 0
+[1-1-1970 1:5:24] minDelta: 18446744073709551615
+[1-1-1970 1:5:24] maxDelta: 0
+[1-1-1970 1:5:24] meanDelta: 0.000000000
+[1-1-1970 1:5:24] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:25] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:25] Events: 0
+[1-1-1970 1:5:25] Errors: 0
+[1-1-1970 1:5:25] Drops: 0
+[1-1-1970 1:5:25] minDelta: 32389
+[1-1-1970 1:5:25] maxDelta: 67632
+[1-1-1970 1:5:25] meanDelta: 41253.61718750
+[1-1-1970 1:5:25] Standard deviation: 14336.02246094
+[1-1-1970 1:5:25] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:25] Events: 0
+[1-1-1970 1:5:25] Errors: 0
+[1-1-1970 1:5:25] Drops: 0
+[1-1-1970 1:5:25] minDelta: 18446744073709551615
+[1-1-1970 1:5:25] maxDelta: 0
+[1-1-1970 1:5:25] meanDelta: 0.000000000
+[1-1-1970 1:5:25] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:26] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:26] Events: 0
+[1-1-1970 1:5:26] Errors: 0
+[1-1-1970 1:5:26] Drops: 0
+[1-1-1970 1:5:26] minDelta: 32389
+[1-1-1970 1:5:26] maxDelta: 67632
+[1-1-1970 1:5:26] meanDelta: 41253.61718750
+[1-1-1970 1:5:26] Standard deviation: 14336.02246094
+[1-1-1970 1:5:26] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:26] Events: 0
+[1-1-1970 1:5:26] Errors: 0
+[1-1-1970 1:5:26] Drops: 0
+[1-1-1970 1:5:26] minDelta: 18446744073709551615
+[1-1-1970 1:5:26] maxDelta: 0
+[1-1-1970 1:5:26] meanDelta: 0.000000000
+[1-1-1970 1:5:26] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:27] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:27] Events: 0
+[1-1-1970 1:5:27] Errors: 0
+[1-1-1970 1:5:27] Drops: 0
+[1-1-1970 1:5:27] minDelta: 32389
+[1-1-1970 1:5:27] maxDelta: 67632
+[1-1-1970 1:5:27] meanDelta: 41253.61718750
+[1-1-1970 1:5:27] Standard deviation: 14336.02246094
+[1-1-1970 1:5:27] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:27] Events: 0
+[1-1-1970 1:5:27] Errors: 0
+[1-1-1970 1:5:27] Drops: 0
+[1-1-1970 1:5:27] minDelta: 18446744073709551615
+[1-1-1970 1:5:27] maxDelta: 0
+[1-1-1970 1:5:27] meanDelta: 0.000000000
+[1-1-1970 1:5:27] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:28] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:28] Events: 0
+[1-1-1970 1:5:28] Errors: 0
+[1-1-1970 1:5:28] Drops: 0
+[1-1-1970 1:5:28] minDelta: 32389
+[1-1-1970 1:5:28] maxDelta: 67632
+[1-1-1970 1:5:28] meanDelta: 41253.61718750
+[1-1-1970 1:5:28] Standard deviation: 14336.02246094
+[1-1-1970 1:5:28] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:28] Events: 0
+[1-1-1970 1:5:28] Errors: 0
+[1-1-1970 1:5:28] Drops: 0
+[1-1-1970 1:5:28] minDelta: 18446744073709551615
+[1-1-1970 1:5:28] maxDelta: 0
+[1-1-1970 1:5:28] meanDelta: 0.000000000
+[1-1-1970 1:5:28] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:29] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:29] Events: 0
+[1-1-1970 1:5:29] Errors: 0
+[1-1-1970 1:5:29] Drops: 0
+[1-1-1970 1:5:29] minDelta: 32389
+[1-1-1970 1:5:29] maxDelta: 67632
+[1-1-1970 1:5:29] meanDelta: 41253.61718750
+[1-1-1970 1:5:29] Standard deviation: 14336.02246094
+[1-1-1970 1:5:29] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:29] Events: 0
+[1-1-1970 1:5:29] Errors: 0
+[1-1-1970 1:5:29] Drops: 0
+[1-1-1970 1:5:29] minDelta: 18446744073709551615
+[1-1-1970 1:5:29] maxDelta: 0
+[1-1-1970 1:5:29] meanDelta: 0.000000000
+[1-1-1970 1:5:29] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:30] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:30] Events: 0
+[1-1-1970 1:5:30] Errors: 0
+[1-1-1970 1:5:30] Drops: 0
+[1-1-1970 1:5:30] minDelta: 32389
+[1-1-1970 1:5:30] maxDelta: 67632
+[1-1-1970 1:5:30] meanDelta: 41253.61718750
+[1-1-1970 1:5:30] Standard deviation: 14336.02246094
+[1-1-1970 1:5:30] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:30] Events: 0
+[1-1-1970 1:5:30] Errors: 0
+[1-1-1970 1:5:30] Drops: 0
+[1-1-1970 1:5:30] minDelta: 18446744073709551615
+[1-1-1970 1:5:30] maxDelta: 0
+[1-1-1970 1:5:30] meanDelta: 0.000000000
+[1-1-1970 1:5:30] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:31] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:31] Events: 0
+[1-1-1970 1:5:31] Errors: 0
+[1-1-1970 1:5:31] Drops: 0
+[1-1-1970 1:5:31] minDelta: 32389
+[1-1-1970 1:5:31] maxDelta: 67632
+[1-1-1970 1:5:31] meanDelta: 41253.61718750
+[1-1-1970 1:5:31] Standard deviation: 14336.02246094
+[1-1-1970 1:5:31] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:31] Events: 0
+[1-1-1970 1:5:31] Errors: 0
+[1-1-1970 1:5:31] Drops: 0
+[1-1-1970 1:5:31] minDelta: 18446744073709551615
+[1-1-1970 1:5:31] maxDelta: 0
+[1-1-1970 1:5:31] meanDelta: 0.000000000
+[1-1-1970 1:5:31] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:32] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:32] Events: 0
+[1-1-1970 1:5:32] Errors: 0
+[1-1-1970 1:5:32] Drops: 0
+[1-1-1970 1:5:32] minDelta: 32389
+[1-1-1970 1:5:32] maxDelta: 67632
+[1-1-1970 1:5:32] meanDelta: 41253.61718750
+[1-1-1970 1:5:32] Standard deviation: 14336.02246094
+[1-1-1970 1:5:32] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:32] Events: 0
+[1-1-1970 1:5:32] Errors: 0
+[1-1-1970 1:5:32] Drops: 0
+[1-1-1970 1:5:32] minDelta: 18446744073709551615
+[1-1-1970 1:5:32] maxDelta: 0
+[1-1-1970 1:5:32] meanDelta: 0.000000000
+[1-1-1970 1:5:32] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:33] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:33] Events: 0
+[1-1-1970 1:5:33] Errors: 0
+[1-1-1970 1:5:33] Drops: 0
+[1-1-1970 1:5:33] minDelta: 32389
+[1-1-1970 1:5:33] maxDelta: 67632
+[1-1-1970 1:5:33] meanDelta: 41253.61718750
+[1-1-1970 1:5:33] Standard deviation: 14336.02246094
+[1-1-1970 1:5:33] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:33] Events: 0
+[1-1-1970 1:5:33] Errors: 0
+[1-1-1970 1:5:33] Drops: 0
+[1-1-1970 1:5:33] minDelta: 18446744073709551615
+[1-1-1970 1:5:33] maxDelta: 0
+[1-1-1970 1:5:33] meanDelta: 0.000000000
+[1-1-1970 1:5:33] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:33] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:33] Events: 0
+[1-1-1970 1:5:33] Errors: 0
+[1-1-1970 1:5:33] Drops: 0
+[1-1-1970 1:5:33] minDelta: 32389
+[1-1-1970 1:5:33] maxDelta: 67632
+[1-1-1970 1:5:33] meanDelta: 41253.61718750
+[1-1-1970 1:5:33] Standard deviation: 14336.02246094
+[1-1-1970 1:5:33] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:33] Events: 0
+[1-1-1970 1:5:33] Errors: 0
+[1-1-1970 1:5:33] Drops: 0
+[1-1-1970 1:5:33] minDelta: 18446744073709551615
+[1-1-1970 1:5:33] maxDelta: 0
+[1-1-1970 1:5:33] meanDelta: 0.000000000
+[1-1-1970 1:5:33] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:34] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:34] Events: 0
+[1-1-1970 1:5:34] Errors: 0
+[1-1-1970 1:5:34] Drops: 0
+[1-1-1970 1:5:34] minDelta: 32389
+[1-1-1970 1:5:34] maxDelta: 67632
+[1-1-1970 1:5:34] meanDelta: 41253.61718750
+[1-1-1970 1:5:34] Standard deviation: 14336.02246094
+[1-1-1970 1:5:34] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:34] Events: 0
+[1-1-1970 1:5:34] Errors: 0
+[1-1-1970 1:5:34] Drops: 0
+[1-1-1970 1:5:34] minDelta: 18446744073709551615
+[1-1-1970 1:5:34] maxDelta: 0
+[1-1-1970 1:5:34] meanDelta: 0.000000000
+[1-1-1970 1:5:34] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:35] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:35] Events: 0
+[1-1-1970 1:5:35] Errors: 0
+[1-1-1970 1:5:35] Drops: 0
+[1-1-1970 1:5:35] minDelta: 32389
+[1-1-1970 1:5:35] maxDelta: 67632
+[1-1-1970 1:5:35] meanDelta: 41253.61718750
+[1-1-1970 1:5:35] Standard deviation: 14336.02246094
+[1-1-1970 1:5:35] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:35] Events: 0
+[1-1-1970 1:5:35] Errors: 0
+[1-1-1970 1:5:35] Drops: 0
+[1-1-1970 1:5:35] minDelta: 18446744073709551615
+[1-1-1970 1:5:35] maxDelta: 0
+[1-1-1970 1:5:35] meanDelta: 0.000000000
+[1-1-1970 1:5:35] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:36] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:36] Events: 0
+[1-1-1970 1:5:36] Errors: 0
+[1-1-1970 1:5:36] Drops: 0
+[1-1-1970 1:5:36] minDelta: 32389
+[1-1-1970 1:5:36] maxDelta: 67632
+[1-1-1970 1:5:36] meanDelta: 41253.61718750
+[1-1-1970 1:5:36] Standard deviation: 14336.02246094
+[1-1-1970 1:5:36] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:36] Events: 0
+[1-1-1970 1:5:36] Errors: 0
+[1-1-1970 1:5:36] Drops: 0
+[1-1-1970 1:5:36] minDelta: 18446744073709551615
+[1-1-1970 1:5:36] maxDelta: 0
+[1-1-1970 1:5:36] meanDelta: 0.000000000
+[1-1-1970 1:5:36] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:37] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:37] Events: 0
+[1-1-1970 1:5:37] Errors: 0
+[1-1-1970 1:5:37] Drops: 0
+[1-1-1970 1:5:37] minDelta: 32389
+[1-1-1970 1:5:37] maxDelta: 67632
+[1-1-1970 1:5:37] meanDelta: 41253.61718750
+[1-1-1970 1:5:37] Standard deviation: 14336.02246094
+[1-1-1970 1:5:37] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:37] Events: 0
+[1-1-1970 1:5:37] Errors: 0
+[1-1-1970 1:5:37] Drops: 0
+[1-1-1970 1:5:37] minDelta: 18446744073709551615
+[1-1-1970 1:5:37] maxDelta: 0
+[1-1-1970 1:5:37] meanDelta: 0.000000000
+[1-1-1970 1:5:37] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:38] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:38] Events: 0
+[1-1-1970 1:5:38] Errors: 0
+[1-1-1970 1:5:38] Drops: 0
+[1-1-1970 1:5:38] minDelta: 32389
+[1-1-1970 1:5:38] maxDelta: 67632
+[1-1-1970 1:5:38] meanDelta: 41253.61718750
+[1-1-1970 1:5:38] Standard deviation: 14336.02246094
+[1-1-1970 1:5:38] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:38] Events: 0
+[1-1-1970 1:5:38] Errors: 0
+[1-1-1970 1:5:38] Drops: 0
+[1-1-1970 1:5:38] minDelta: 18446744073709551615
+[1-1-1970 1:5:38] maxDelta: 0
+[1-1-1970 1:5:38] meanDelta: 0.000000000
+[1-1-1970 1:5:38] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:39] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:39] Events: 0
+[1-1-1970 1:5:39] Errors: 0
+[1-1-1970 1:5:39] Drops: 0
+[1-1-1970 1:5:39] minDelta: 32389
+[1-1-1970 1:5:39] maxDelta: 67632
+[1-1-1970 1:5:39] meanDelta: 41253.61718750
+[1-1-1970 1:5:39] Standard deviation: 14336.02246094
+[1-1-1970 1:5:39] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:39] Events: 0
+[1-1-1970 1:5:39] Errors: 0
+[1-1-1970 1:5:39] Drops: 0
+[1-1-1970 1:5:39] minDelta: 18446744073709551615
+[1-1-1970 1:5:39] maxDelta: 0
+[1-1-1970 1:5:39] meanDelta: 0.000000000
+[1-1-1970 1:5:39] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:40] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:40] Events: 0
+[1-1-1970 1:5:40] Errors: 0
+[1-1-1970 1:5:40] Drops: 0
+[1-1-1970 1:5:40] minDelta: 32389
+[1-1-1970 1:5:40] maxDelta: 67632
+[1-1-1970 1:5:40] meanDelta: 41253.61718750
+[1-1-1970 1:5:40] Standard deviation: 14336.02246094
+[1-1-1970 1:5:40] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:40] Events: 0
+[1-1-1970 1:5:40] Errors: 0
+[1-1-1970 1:5:40] Drops: 0
+[1-1-1970 1:5:40] minDelta: 18446744073709551615
+[1-1-1970 1:5:40] maxDelta: 0
+[1-1-1970 1:5:40] meanDelta: 0.000000000
+[1-1-1970 1:5:40] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:40] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:40] Events: 0
+[1-1-1970 1:5:40] Errors: 0
+[1-1-1970 1:5:40] Drops: 0
+[1-1-1970 1:5:40] minDelta: 32389
+[1-1-1970 1:5:40] maxDelta: 67632
+[1-1-1970 1:5:40] meanDelta: 41253.61718750
+[1-1-1970 1:5:40] Standard deviation: 14336.02246094
+[1-1-1970 1:5:40] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:40] Events: 0
+[1-1-1970 1:5:40] Errors: 0
+[1-1-1970 1:5:40] Drops: 0
+[1-1-1970 1:5:40] minDelta: 18446744073709551615
+[1-1-1970 1:5:40] maxDelta: 0
+[1-1-1970 1:5:40] meanDelta: 0.000000000
+[1-1-1970 1:5:40] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:41] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:41] Events: 0
+[1-1-1970 1:5:41] Errors: 0
+[1-1-1970 1:5:41] Drops: 0
+[1-1-1970 1:5:41] minDelta: 32389
+[1-1-1970 1:5:41] maxDelta: 67632
+[1-1-1970 1:5:41] meanDelta: 41253.61718750
+[1-1-1970 1:5:41] Standard deviation: 14336.02246094
+[1-1-1970 1:5:41] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:41] Events: 0
+[1-1-1970 1:5:41] Errors: 0
+[1-1-1970 1:5:41] Drops: 0
+[1-1-1970 1:5:41] minDelta: 18446744073709551615
+[1-1-1970 1:5:41] maxDelta: 0
+[1-1-1970 1:5:41] meanDelta: 0.000000000
+[1-1-1970 1:5:41] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:42] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:42] Events: 0
+[1-1-1970 1:5:42] Errors: 0
+[1-1-1970 1:5:42] Drops: 0
+[1-1-1970 1:5:42] minDelta: 32389
+[1-1-1970 1:5:42] maxDelta: 67632
+[1-1-1970 1:5:42] meanDelta: 41253.61718750
+[1-1-1970 1:5:42] Standard deviation: 14336.02246094
+[1-1-1970 1:5:42] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:42] Events: 0
+[1-1-1970 1:5:42] Errors: 0
+[1-1-1970 1:5:42] Drops: 0
+[1-1-1970 1:5:42] minDelta: 18446744073709551615
+[1-1-1970 1:5:42] maxDelta: 0
+[1-1-1970 1:5:42] meanDelta: 0.000000000
+[1-1-1970 1:5:42] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:43] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:43] Events: 0
+[1-1-1970 1:5:43] Errors: 0
+[1-1-1970 1:5:43] Drops: 0
+[1-1-1970 1:5:43] minDelta: 32389
+[1-1-1970 1:5:43] maxDelta: 67632
+[1-1-1970 1:5:43] meanDelta: 41253.61718750
+[1-1-1970 1:5:43] Standard deviation: 14336.02246094
+[1-1-1970 1:5:43] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:43] Events: 0
+[1-1-1970 1:5:43] Errors: 0
+[1-1-1970 1:5:43] Drops: 0
+[1-1-1970 1:5:43] minDelta: 18446744073709551615
+[1-1-1970 1:5:43] maxDelta: 0
+[1-1-1970 1:5:43] meanDelta: 0.000000000
+[1-1-1970 1:5:43] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:44] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:44] Events: 0
+[1-1-1970 1:5:44] Errors: 0
+[1-1-1970 1:5:44] Drops: 0
+[1-1-1970 1:5:44] minDelta: 32389
+[1-1-1970 1:5:44] maxDelta: 67632
+[1-1-1970 1:5:44] meanDelta: 41253.61718750
+[1-1-1970 1:5:44] Standard deviation: 14336.02246094
+[1-1-1970 1:5:44] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:44] Events: 0
+[1-1-1970 1:5:44] Errors: 0
+[1-1-1970 1:5:44] Drops: 0
+[1-1-1970 1:5:44] minDelta: 18446744073709551615
+[1-1-1970 1:5:44] maxDelta: 0
+[1-1-1970 1:5:44] meanDelta: 0.000000000
+[1-1-1970 1:5:44] Standard deviation: nan
+Camera reached end of stream.
+[1-1-1970 1:5:45] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:45] Events: 0
+[1-1-1970 1:5:45] Errors: 0
+[1-1-1970 1:5:45] Drops: 0
+[1-1-1970 1:5:45] minDelta: 32389
+[1-1-1970 1:5:45] maxDelta: 67632
+[1-1-1970 1:5:45] meanDelta: 41253.61718750
+[1-1-1970 1:5:45] Standard deviation: 14336.02246094
+[1-1-1970 1:5:45] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:45] Events: 0
+[1-1-1970 1:5:45] Errors: 0
+[1-1-1970 1:5:45] Drops: 0
+[1-1-1970 1:5:45] minDelta: 18446744073709551615
+[1-1-1970 1:5:45] maxDelta: 0
+[1-1-1970 1:5:45] meanDelta: 0.000000000
+[1-1-1970 1:5:45] Standard deviation: nan
+Timing results:
+Thread main:
+-onProcess                CPU: 32000us, std=12580       | GPU: 31512us, std=12581       | samples=530
+-onRender                 CPU:  3000us, std=2424       | GPU:  3359us, std=2450       | samples=529
+
+[1-1-1970 1:5:45] Sensor statistics for: camera.virtual, camera-index=0,camera-type=ar0231-rccb-ssc,csi-port=ab,dla=0,dlaEngineNo=0,enableFoveal=0,input-type=video,precision=fp32,slave=0,stopFrame=0,video=.././data/samples/raw/rccb.raw
+[1-1-1970 1:5:45] Events: 0
+[1-1-1970 1:5:45] Errors: 0
+[1-1-1970 1:5:45] Drops: 0
+[1-1-1970 1:5:45] minDelta: 33009
+[1-1-1970 1:5:45] maxDelta: 33009
+[1-1-1970 1:5:45] meanDelta: 33009.000000000
+[1-1-1970 1:5:45] Standard deviation: 0.000000000
+[1-1-1970 1:5:45] SDK: Release NvMediaDevice
+[1-1-1970 1:5:45] Driveworks SDK released
+[1-1-1970 1:5:45] SDK: Release NvMedia2D

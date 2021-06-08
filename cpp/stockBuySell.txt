@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+void func(int arr[], int n);
+
+int main() {
+
+	int T, N, arr[1000], i;
+	
+	cin>>T;
+	while (T-- > 0)
+	{
+	    cin>>N;
+	    
+	    for(i=0; i<N; i++)
+	    {
+	        cin>>arr[i];
+	    }
+	    
+	    func(arr, N);
+	}
+	return 0;
+}
+
+void func(int arr[], int n)
+{
+    int i, prev = 0, min = -1, max = -1;
+    bool profit = false;
+     
+    for (i=1; i<n; i++)
+    {
+        if (arr[i] < arr[prev])
+        { 
+            if(min!=-1)
+            {
+              max = prev;
+              cout<<"("<<min<<" "<<max<<") ";
+              min = -1; max = -1;
+              profit = true;
+            }
+        }
+        else if (arr[i] > arr[prev])
+        {
+            if (min == -1)
+              min = prev;
+              
+            if ((min!= -1) && (i==n-1))
+            {
+                max = i;
+                cout<<"("<<min<<" "<<max<<") ";
+                profit = true;
+            }
+        }
+        
+        prev = i;
+    }
+    
+    if (profit)
+        cout<<"\n";
+    else
+        cout<<"No Profit\n";
+    
+}

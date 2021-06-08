@@ -1,0 +1,47 @@
+[1-1-1970 1:6:19] Initialize DriveWorks SDK v1.1.843-experimental
+[1-1-1970 1:6:19] Experimental Release build with GNU 5.4.0 from heads/master-0-gf8d143c against Vibrante PDK v5.0.7.2
+[1-1-1970 1:6:19] Platform: Detected DDPX - Tegra A
+[1-1-1970 1:6:19] TimeSource: monotonic epoch time offset is 0
+[1-1-1970 1:6:19] Platform: number of GPU devices detected 1
+[1-1-1970 1:6:19] Platform: currently selected GPU device integrated ID 0
+[1-1-1970 1:6:19] SDK: Resources mounted from .././data/resources
+[1-1-1970 1:6:19] SDK: Create NvMediaDevice
+[1-1-1970 1:6:19] SDK: Create NvMediaIPPManager
+[1-1-1970 1:6:19] SDK: use EGL display as provided
+[1-1-1970 1:6:19] SensorFactory::createSensor() -> camera.virtual, video=.././data/samples/sfm/triangulation/video_0.h264
+[1-1-1970 1:6:19] CameraNvMedia: no seek table found at .././data/samples/sfm/triangulation/video_0.h264.seek, seeking is not available.
+Camera image with 1280x800 at 30.000000 FPS
+Timing results:
+Thread main:
+-onProcess                CPU: 14000us, std=4243       | GPU: 13797us, std=4239       | samples=204
+--ProcessFrame            CPU: 14000us, std=4150 (100%) | GPU: 13757us, std=4171 (99%) | samples=204
+---trackFrame             CPU:  3000us, std=3301 (21%) | GPU:  2635us, std=1109 (19%) | samples=204
+----buildPyramid          CPU:     0us, std= 389 ( 0%) | GPU:   128us, std= 253 ( 4%) | samples=204
+----compactFeature        CPU:     0us, std= 530 ( 0%) | GPU:    73us, std= 245 ( 2%) | samples=204
+-----compactCall          CPU:     0us, std= 205       | GPU:    19us, std=  55 (25%) | samples=204
+-----proximityFilter      CPU:     0us, std= 343       | GPU:    34us, std= 113 (46%) | samples=204
+-----selectValid          CPU:     0us, std= 226       | GPU:    15us, std=  62 (20%) | samples=204
+----detectNewFeatures     CPU:     0us, std= 446 ( 0%) | GPU:   212us, std= 200 ( 8%) | samples=204
+----downloadToCPU         CPU:  2000us, std=3233 (66%) | GPU:  1652us, std= 451 (62%) | samples=204
+----trackCall             CPU:     0us, std= 381 ( 0%) | GPU:   382us, std= 147 (14%) | samples=204
+-onRender                 CPU: 16000us, std=1752       | GPU: 15821us, std=1767       | samples=204
+
+[1-1-1970 1:6:31] Sensor statistics for: camera.virtual, video=.././data/samples/sfm/triangulation/video_0.h264
+[1-1-1970 1:6:31] Events: 0
+[1-1-1970 1:6:31] Errors: 0
+[1-1-1970 1:6:31] Drops: 0
+[1-1-1970 1:6:31] minDelta: 33333
+[1-1-1970 1:6:31] maxDelta: 33334
+[1-1-1970 1:6:31] meanDelta: 33333.35937500
+[1-1-1970 1:6:31] Standard deviation: 0.47113192
+[1-1-1970 1:6:31] Sensor statistics for: camera.virtual, video=.././data/samples/sfm/triangulation/video_0.h264
+[1-1-1970 1:6:31] Events: 0
+[1-1-1970 1:6:31] Errors: 0
+[1-1-1970 1:6:31] Drops: 0
+[1-1-1970 1:6:31] minDelta: 33333
+[1-1-1970 1:6:31] maxDelta: 33334
+[1-1-1970 1:6:31] meanDelta: 33333.35937500
+[1-1-1970 1:6:31] Standard deviation: 0.47113192
+[1-1-1970 1:6:31] SDK: Release NvMediaDevice
+[1-1-1970 1:6:31] Driveworks SDK released
+[1-1-1970 1:6:31] SDK: Release NvMedia2D

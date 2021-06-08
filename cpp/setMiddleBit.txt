@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+unsigned int print(unsigned int N);
+
+int main() {
+	
+ unsigned int T, N;
+
+ scanf ("%u", &T);
+
+ for (; T>0; T--)
+ {
+    scanf ("%u", &N);
+    if (N <=0)
+    {
+      continue;
+    }
+
+    printf ("%u\n", print (N));
+  }
+	
+	return 0;
+}
+
+unsigned int print(unsigned int N)
+{
+    unsigned int x = 1, i, a = 1, b = 1;
+    
+    x = x << 19;
+    
+    for (i=20; i>0; i--)
+    {
+        if (x & N)
+        {
+            break;
+        }
+        x = x >> 1;
+    }
+    
+    if (i%2)
+    {
+       a = a << (i/2);
+       b = 0;
+    }
+    else
+    {
+        a = a << (i/2 - 1);
+        b = b << (i/2);
+    }
+    
+    if (N & a)
+    {
+        N = N & (~a);
+    }
+    else
+    {
+        N = N | a;
+    }
+    
+    if (b != 0)
+    {
+      if (N & b)
+      {
+        N = N & (~b);
+      }
+      else
+      {
+        N = N | b;
+      }
+    }
+
+    return N;
+}

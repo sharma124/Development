@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+void printSubsets (int *D, int *d, int N, int n, int x, int sum);
+
+int main() {
+
+  int T, N, i, sum;
+  int D[10], d[10];
+
+  scanf ("%d", &T);
+
+  for (; T>0; T--)
+  {
+    scanf ("%d", &N);
+    if (N <=0)
+    {
+      continue;
+    }
+
+    for (i=0; i<N; i++)
+    {
+      scanf("%d", &D[i]);
+    }
+	
+	scanf ("%d", &sum);
+
+    print (D, d, N, 0, 0, sum);
+    printf("\n");
+  }
+  return 0;
+}
+
+void printSubsets (int *D, int *d, int N, int n, int x, int sum)
+{
+  int i, j, a;
+  
+  for (i = x; i < N; i++)
+  {
+    d[n] = D[i];
+
+    a = 0;
+	for (j=0; j<=n; j++)
+    {
+	  a = a+ d[j];
+    }
+	
+	if (sum == a)
+	{
+		printf ("{");
+	
+		for (j=0; j<=n; j++)
+		{
+			printf("%d,", d[j]);
+		}
+		printf ("\b} ");
+	}
+	
+    printSubsets (D, d, N, n+1, i+1);
+  }
+}
+
+
+
+
+

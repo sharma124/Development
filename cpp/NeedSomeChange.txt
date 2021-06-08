@@ -1,0 +1,27 @@
+void swapElements(int arr[], int sizeof_array){
+    
+    int last0, last1, temp1, temp2, i;
+    
+    if (sizeof_array % 2)
+    {
+        last0 = sizeof_array -1;
+        last1 = sizeof_array -2;
+    }
+    else
+    {
+        last0 = sizeof_array -2;
+        last1 = sizeof_array -1;
+    }
+    
+    temp1 = arr[0];
+    temp2 = arr[1];
+    
+    for (i=2; i<sizeof_array; i++)
+    {
+        arr[i-2] = arr[i];
+    }
+    
+    arr[last0] = temp1;
+    arr[last1] = temp2;
+    
+}

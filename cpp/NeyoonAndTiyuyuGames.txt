@@ -1,0 +1,77 @@
+#include <iostream>
+using namespace std;
+
+void func(int a[], int n);
+
+int main() {
+
+	int T, i;
+	int a[300000], n;
+	
+	cin>>T;
+	while (T-- > 0)
+	{
+	    cin>>n;
+	    for (i=0; i<n; i++)
+	    {
+	        cin>>a[i];
+	    }
+	    
+	    func(a, n);
+	    cout<<"\n";
+	}
+	return 0;
+}
+
+//Possible cases-
+1. (only 1 pool if 0's)
+  100001    T wins
+  1000001   N wins
+  
+2. (2 pool of 0's)
+  1100000110001    T wins
+  110000011001     N wins
+  
+3. (more pool of 0's)
+  same as 2 pool of 0's we will only  2 highest pools of 0's and treat the same way as for 2.
+  
+
+void func(int a[], int n)
+{
+    int i, maxcnt2 = 0;
+    int cnt=0, maxcnt = 0;
+    
+    for (i=0; i<n; i++)
+    {
+        if (a[i]==0)
+        {
+            cnt++;
+        }
+        else
+        {
+            if (cnt >= maxcnt)
+            {
+                maxcnt2 = maxcnt;
+                maxcnt = cnt;
+            }
+            else if (cnt > maxcnt2)
+            {
+                maxcnt2 = cnt;
+            }
+                
+            cnt = 0;
+        }
+    }
+    
+    if (maxcnt%2)
+    {
+        if ((maxcnt/2) < maxcnt2)
+            cout <<"No";
+        else
+            cout<<"Yes";
+    }
+    else
+    {
+        cout<<"No";
+    }
+}

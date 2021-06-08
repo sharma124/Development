@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <math.h>
+
+unsigned long long print(unsigned long long N);
+
+int main() {
+    
+ unsigned int T;
+ unsigned long long N;
+
+ scanf ("%u", &T);
+
+ for (; T>0; T--)
+ {
+    scanf ("%llu", &N);
+    if (N <0)
+    {
+      continue;
+    }
+
+    printf ("%llu\n", print (N));
+  }
+	return 0;
+}
+
+unsigned long long print(unsigned long long N)
+{
+ unsigned long long x, less, more;
+ 
+ x = sqrt(N);
+ less = x*x;
+ more = (x+1)*(x+1);
+ 
+ if (less == N)
+ {
+     return (x-1)*(x-1);
+ }
+ else if ((N-less) < (more - N))
+ {
+     return less;
+ }
+ else
+ {
+     return more;
+ }
+ 
+ /*float a, b;
+ const float pointfive = 0.5;
+ 
+ a = (float)x;
+ b = sqrt(N);
+ 
+ if ((b-a) == 0)
+ {
+    return (x-1)*(x-1);
+ }
+ else  if ((b-a) <= pointfive)
+ {
+	return x*x;
+ }
+ else
+ { 
+   return (x+1)*(x+1);
+ }*/
+}

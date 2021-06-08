@@ -1,0 +1,62 @@
+int getLeft (int A[], int index)
+{
+  while (index != 0)
+  {
+    if (A[--index] != -1)
+    {
+      return A[index];
+    }
+  }
+
+  return 1;
+}
+
+int getRight (int A[], int index, int lastIndex)
+{
+  while (index != lastIndex)
+  {
+    if (A[++index] != -1)
+    {
+      return A[index];
+    }
+  }
+
+  return 1;
+}
+
+
+int func(int A[], int size)
+{
+  int left, right, middle, i, max=0, val;
+
+  if (size == 0)
+  {
+    return 0;
+  }
+
+  for (i=0; i < size; i++)
+  {
+    if (A[i] == -1)
+    {
+      continue;
+    }
+
+    left = getLeft(A, i);
+    right = getRight(A, i, size -1);
+    middle = A[i];
+
+    val = (left * middle * right);
+    A[i] = -1;
+    val = val + func (A, size);
+
+    A[i] = middle;
+
+    if (val > max)
+    {
+      max = val;
+    }
+
+  }
+  
+  return max;
+}

@@ -1,0 +1,53 @@
+#define <iostream>
+
+int main()
+{
+  char a[] = "abcdefgchi";
+  char hash[150];
+
+
+  memset (hash, 0, sizeof(hash));
+
+  int start, end, s, e, i;
+
+  start = end = s = e = 0;
+
+  for (i=0; i<150; i++)
+  {
+    hash[i] = -1;
+  }
+
+  while (a[e] != 0)
+  {
+    if (hash[a[e]] != -1)
+    {
+      if ((end-start) < (e-s))
+      {
+        start = s; end = e;
+      }
+
+      for (i=s; i<=hash[a[e]]; i++)
+      {
+        hash[a[i]] = -1;
+      }
+
+      s = i;
+    }
+
+    hash[a[e]] = e;
+    e++;
+  }
+
+  if ((end-start) < (e-s))
+  {
+    start = s; end = e;
+  }
+
+  for (i = start; i < end; i++)
+  {
+    cout<<a[i];
+  }
+
+  cout<<endl;
+
+}

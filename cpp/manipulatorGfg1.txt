@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <string.h>
+
+void func(char str1[], char str2[]);
+void decoder(char str[]);
+
+int main() {
+    int T;
+    char str1[1001], str2[1001];
+    
+    scanf ("%d", &T);
+    while (T > 0)
+    {
+        T--;
+        
+        scanf ("%s", str1);
+        scanf ("%s", str2);
+        
+        func(str1, str2);
+    }
+	return 0;
+}
+
+
+void func(char str1[], char str2[])
+{
+    decoder(str1);
+    decoder(str2);
+    
+    if (strcmp(str2, str1))
+    {
+        printf("No\n");
+    }
+    else
+    {
+        printf("Yes\n");
+    }
+   
+}
+
+void decoder(char str[])
+{
+  int i, j=-1;
+
+  for (i=0; str[i]; i++)
+  {
+    if (str[i]=='#')
+    {
+        str[j] = (((str[j]-63)%26) + 64);
+    }
+    else
+    {
+      str[++j] = str[i];
+    }
+  }
+ 
+  str[++j] = 0;
+}
